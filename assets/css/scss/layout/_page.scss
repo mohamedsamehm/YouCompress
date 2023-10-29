@@ -1,0 +1,97 @@
+/* Banner Ads */
+.adsbygoogle {
+  display: block;
+}
+.banner-wrap {
+  min-height: 280px;
+  margin-top: 25px !important;
+  margin-bottom: 30px !important;
+}
+
+/* Page Heading */
+.page-heading {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 50px 0 30px;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+.page-heading h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: #595f71;
+  margin-bottom: 20px;
+}
+.page-heading p {
+  max-width: 735px;
+  font-size: 1.25rem !important;
+  margin: auto !important;
+  margin-bottom: 1.5rem !important;
+  font-weight: 300 !important;
+}
+.page-heading .buttons-wrap {
+  margin-bottom: 20px;
+}
+.page-heading .buttons-wrap .btn {
+  margin-bottom: 10px;
+}
+.page-heading .form-upload {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+/* Social Networks */
+.share-social p {
+  font-size: 1rem;
+  margin-bottom: 0 !important;
+}
+.social-networks {
+  font-size: 40px;
+}
+.social-networks a {
+  text-decoration: none !important;
+  color: initial;
+}
+.icon-facebook-squared {
+  color: #3d5dad !important;
+}
+.icon-twitter {
+  color: #1da1f2 !important;
+}
+.icon-linkedin {
+  color: #007bb5 !important;
+}
+.icon-whatsapp {
+  color: #36c34e !important;
+}
+
+/* Tools List */
+.tools-list {
+  padding: 10px 0;
+}
+.tool-panel {
+  padding: 40px 10px 30px;
+  text-align: center;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .tool-panel {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 30px;
+  }
+}
+.panel-title {
+  font-size: 20px;
+  color: #595f71;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.section-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #595f71;
+  margin-bottom: 30px;
+}

@@ -1,0 +1,32 @@
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  background: #3041DE !important;
+  width: 100%;
+}
+.navbar > .container {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-brand {
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  font-size: 23px;
+  color: #fff !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.navbar-brand span {
+  font-weight: bold;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: rgba(0, 0, 0, 1);
+}
