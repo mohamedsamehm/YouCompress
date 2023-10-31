@@ -22,20 +22,20 @@
 @media (min-width: 768px) {
   .col-md-6 {
     flex: 0 0 auto;
-    width: 50%;
+    width: 50% !important;
   }
   .col-md-8 {
     flex: 0 0 auto;
-    width: 66.66666667%;
+    width: 66.66666667% !important;
   }
 }
 @media (min-width: 992px) {
   .col-lg-7 {
     flex: 0 0 auto;
-    width: 58.33333333%;
+    width: 58.33333333% !important;
   }
   .col-lg-9 {
     flex: 0 0 auto;
-    width: 75%;
+    width: 75% !important;
   }
 }
