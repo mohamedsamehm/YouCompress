@@ -35,9 +35,44 @@
 .page-heading .buttons-wrap .btn {
   margin-bottom: 10px;
 }
-.page-heading .form-upload {
+.page-heading .file-upload {
   margin: 20px auto;
   max-width: 600px;
+}
+.file-upload .file-upload-select {
+	display: flex;
+  align-items: center;
+  height: 38px;
+	color: #595f71;
+	cursor: pointer;
+	text-align: left;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+	border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+.file-upload .file-upload-select .file-select-button {
+	background: #f8f9fa;
+	padding: 8px 20px;
+	display: inline-block;
+  color: #111;
+  border-right: 1px solid #dee2e6;
+  cursor: pointer;
+}
+.file-upload .file-upload-select .file-select-name {
+	display: inline-block;
+	padding: 8px 10px;
+}
+.file-upload .file-upload-select:hover .file-select-button {
+	background: #e2e6ea;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+.file-upload .file-upload-select input[type="file"] {
+	display: none;
 }
 
 /* Social Networks */

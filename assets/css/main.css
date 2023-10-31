@@ -294,22 +294,163 @@ button {
   color: #cc0000;
 }
 
-.form-control {
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  vertical-align: top;
+  border-color: #dee2e6;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  background-color: #fff;
+  border-bottom-width: 1px;
+}
+
+.table > tbody {
+  vertical-align: inherit;
+}
+
+.table > thead {
+  vertical-align: bottom;
+}
+
+.table-bordered > :not(caption) > * {
+  border-width: 1px 0;
+}
+
+.table-bordered > :not(caption) > * > * {
+  border-width: 0 1px;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  white-space: nowrap;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.dropdown-toggle:empty::after {
+  margin-left: 0;
+}
+
+.dropdown-menu {
+  position: absolute;
+  bottom: 38px;
+  left: 0px;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 0.375rem;
+}
+
+.dropdown-item {
   display: block;
   width: 100%;
-  padding: 0.375rem 0.75rem;
+  padding: 0.25rem 1rem;
+  clear: both;
+  font-weight: 400;
+  color: #000 !important;
+  text-decoration: none !important;
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff !important;
+  text-decoration: none;
+  background-color: #0d6efd;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.show > a {
+  outline: 0;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 10px;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
+  line-height: 1.25;
+  color: #595f71;
+  background-image: none;
+  background-clip: padding-box;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid #dee2e6;
-  border-radius: 0.375rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  webkit-box-flex: 1;
+  flex: 1 1 auto;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -384,150 +525,6 @@ button {
   background-color: #e9ecef;
 }
 
-table {
-  caption-side: bottom;
-  border-collapse: collapse;
-}
-
-th {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
-}
-
-thead,
-tbody,
-tfoot,
-tr,
-td,
-th {
-  border-color: inherit;
-  border-style: solid;
-  border-width: 0;
-}
-
-.table {
-  width: 100%;
-  margin-bottom: 1rem;
-  vertical-align: top;
-  border-color: #dee2e6;
-}
-
-.table > :not(caption) > * > * {
-  padding: 0.5rem 0.5rem;
-  background-color: #fff;
-  border-bottom-width: 1px;
-}
-
-.table > tbody {
-  vertical-align: inherit;
-}
-
-.table > thead {
-  vertical-align: bottom;
-}
-
-.table-bordered > :not(caption) > * {
-  border-width: 1px 0;
-}
-
-.table-bordered > :not(caption) > * > * {
-  border-width: 0 1px;
-}
-
-.text-danger {
-  color: #dc3545 !important;
-}
-
-.font-weight-bold {
-  font-weight: bold;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown-toggle {
-  white-space: nowrap;
-}
-
-.dropdown-toggle::after {
-  display: inline-block;
-  margin-left: 0.255em;
-  vertical-align: 0.255em;
-  content: "";
-  border-top: 0.3em solid;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0;
-  border-left: 0.3em solid transparent;
-}
-
-.dropdown-toggle:empty::after {
-  margin-left: 0;
-}
-
-.dropdown-menu {
-  position: absolute;
-  transform: translate3d(399px, -540px, 0px);
-  top: 0px;
-  left: 0px;
-  will-change: transform;
-  z-index: 1000;
-  display: none;
-  min-width: 10rem;
-  padding: 0.5rem 0;
-  margin: 0;
-  font-size: 1rem;
-  color: #212529;
-  text-align: left;
-  list-style: none;
-  background-color: #fff;
-  background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.175);
-  border-radius: 0.375rem;
-}
-
-.dropdown-menu[data-bs-popper] {
-  top: 100%;
-  left: 0;
-  margin-top: 0.125rem;
-}
-
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: 0.25rem 1rem;
-  clear: both;
-  font-weight: 400;
-  color: #000 !important;
-  text-decoration: none !important;
-  text-align: inherit;
-  text-decoration: none;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-}
-
-.dropdown-item:hover,
-.dropdown-item:focus {
-  color: #212529;
-  background-color: #f8f9fa;
-}
-
-.dropdown-item.active,
-.dropdown-item:active {
-  color: #fff !important;
-  text-decoration: none;
-  background-color: #0d6efd;
-}
-
-.dropdown-menu.show {
-  display: block;
-}
-
-.show > a {
-  outline: 0;
-}
-
 /* Banner Ads */
 .adsbygoogle {
   display: block;
@@ -571,9 +568,49 @@ th {
   margin-bottom: 10px;
 }
 
-.page-heading .form-upload {
+.page-heading .file-upload {
   margin: 20px auto;
   max-width: 600px;
+}
+
+.file-upload .file-upload-select {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  color: #595f71;
+  cursor: pointer;
+  text-align: left;
+  background: #fff;
+  overflow: hidden;
+  position: relative;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.file-upload .file-upload-select .file-select-button {
+  background: #f8f9fa;
+  padding: 8px 20px;
+  display: inline-block;
+  color: #111;
+  border-right: 1px solid #dee2e6;
+  cursor: pointer;
+}
+
+.file-upload .file-upload-select .file-select-name {
+  display: inline-block;
+  padding: 8px 10px;
+}
+
+.file-upload .file-upload-select:hover .file-select-button {
+  background: #e2e6ea;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.file-upload .file-upload-select input[type=file] {
+  display: none;
 }
 
 /* Social Networks */

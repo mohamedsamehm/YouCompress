@@ -99,17 +99,17 @@ document.addEventListener("DOMContentLoaded", function () {
     event.stopPropagation();
   });
 
-
-  var fileChoose = document.querySelector("input[type=file]");
-  fileChoose.addEventListener("change", function () {
-    var input = fileChoose;
-    var numFiles = input.files ? input.files.length : 1;
-    var label = input.value.replace(/\\/g, "/").replace(/.*\//, "");
-    var textinput = document.querySelector("input[type=text]");
-    var log = numFiles > 1 ? numFiles + " files selected" : label;
-    textinput.value = log;
-  }); 
-
+  let fileInput = document.getElementById("file-upload-input");
+  let fileSelect = document.getElementsByClassName("file-upload-select")[0];
+  fileSelect.onclick = function () {
+    fileInput.click();
+  };
+  fileInput.onchange = function () {
+    let filename = fileInput.files[0].name;
+    let selectName = document.getElementsByClassName("file-select-name")[0];
+    selectName.innerText = filename;
+  };
+  
   document
     .querySelector("#submitbutton")
     .addEventListener("click", function () {

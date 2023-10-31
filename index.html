@@ -87,10 +87,12 @@
               action="https://www.youcompress.com/"
               method="post"
               enctype="multipart/form-data">
-              <div class="form-upload">
-                <input class="form-control" type="file" id="formFile"
-                  name="upfile"
-                  accept=".avi,.gif,.jpg,.jpeg,.mov,.mp3,.mp4,.pdf,.png,.tif,.tiff,.doc,.docx,.docm,.xls,.xlsx,.xlsm,.ppt,.pptx,.pptm,.odt,.ods,.odg,.apk,.wav,.ttf,.webp,.svg,.avif">
+              <div class="file-upload">
+                <div class="file-upload-select">
+                  <label class="file-select-button">Select file...</label>
+                  <div class="file-select-name">No file chosen...</div> 
+                  <input type="file" name="upfile" id="file-upload-input" pt=".avi,.gif,.jpg,.jpeg,.mov,.mp3,.mp4,.pdf,.png,.tif,.tiff,.doc,.docx,.docm,.xls,.xlsx,.xlsm,.ppt,.pptx,.pptm,.odt,.ods,.odg,.apk,.wav,.ttf,.webp,.svg,.avif">
+                </div>
               </div>
 
               <input type="hidden" name="submitfile" value="1" />
