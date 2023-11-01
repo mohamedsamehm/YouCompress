@@ -507,11 +507,16 @@ th {
   color: #111;
   border-right: 1px solid #dee2e6;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .file-upload .file-upload-select .file-select-name {
   display: inline-block;
   padding: 8px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.25;
+  white-space: nowrap;
 }
 
 .file-upload .file-upload-select:hover .file-select-button {
@@ -528,7 +533,7 @@ th {
 
 /* Social Networks */
 .share-social p {
-  font-size: 1rem;
+  font-size: 1rem !important;
   margin-bottom: 0 !important;
 }
 
