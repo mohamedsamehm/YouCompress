@@ -379,7 +379,7 @@ th {
 .dropdown-menu {
   position: absolute;
   bottom: 38px;
-  left: 0px;
+  left: -72px;
   z-index: 1000;
   display: none;
   min-width: 20rem;
@@ -412,6 +412,8 @@ th {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
 .dropdown-item:hover,
